@@ -1,0 +1,40 @@
+.twenty-four {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.twenty-four-sticker,
+.yesSticker {
+  margin: 20px auto;
+  width: 300px;
+  /* Add your sticker styling here */
+}
+
+.yesSticker {
+  margin-top: 150px;
+}
+
+.twenty-four-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap between buttons */
+}
+
+.twenty-four-no-button {
+  height: 30px;
+  width: 50px;
+  background-color: rgb(222, 158, 158);
+}
+
+.twenty-four-yes-button {
+  background-color: rgb(158, 222, 158);
+}
+
+.twenty-four-no-button,
+.twenty-four-yes-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px; /* Adjust the padding as needed */
+}

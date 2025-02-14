@@ -1,0 +1,61 @@
+.twenty-five {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  border: 1px solid blue;
+}
+
+.twenty-five-sticker,
+.twenty-five-yesSticker {
+  margin: 20px auto;
+  width: 300px;
+}
+
+.twenty-five-yesSticker {
+  margin-top: 150px;
+}
+
+.twenty-five-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 200px;
+  position: relative;
+}
+
+.twenty-five-no-button {
+  height: 30px;
+  width: 50px;
+  background-color: rgb(222, 158, 158);
+  position: absolute;
+}
+
+.twenty-five-no-button:hover {
+  transform: scale(1.1);
+}
+
+.twenty-five-empty-button {
+  height: 30px;
+  width: 50px;
+  border: none;
+  background: none;
+}
+
+.twenty-five-yes-button {
+  background-color: rgb(158, 222, 158);
+}
+
+.twenty-five-empty-button,
+.twenty-five-yes-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px; /* Adjust the padding as needed */
+}
+
+.twenty-five-yes-message > * {
+  margin: 5px;
+}
