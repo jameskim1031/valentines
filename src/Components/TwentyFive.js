@@ -1,12 +1,9 @@
 import React, { useState, useRef } from "react";
 import "./TwentyFive.css";
 import dudu from "../Images/dudu.jpeg";
-import { useNavigate } from "react-router-dom";
 import bubududu from "../Images/bubududu.jpeg";
 
 function TwentyFive() {
-  let navigate = useNavigate();
-  const [buttonSize, setButtonSize] = useState(30);
   const [saidYes, setSaidYes] = useState(false);
   const noButtonRef = useRef(null);
   const [canMove, setCanMove] = useState(true);
@@ -34,7 +31,7 @@ function TwentyFive() {
     const buttonX = rect.left + rect.width / 2;
     const buttonY = rect.top + rect.height / 2;
     const distance = Math.sqrt(
-      (mouseX - buttonX) ** 2 + (mouseY - buttonY) ** 2
+      (mouseX - buttonX) ** 2 + (mouseY - buttonY) ** 2,
     );
 
     if (distance < 100) {
@@ -60,7 +57,7 @@ function TwentyFive() {
           <div className="twenty-five-buttons">
             <button
               onClick={handleYesClick}
-              style={{ width: `${buttonSize}px`, height: `${buttonSize}px` }}
+              style={{ width: `${30}px`, height: `${30}px` }}
               className={`twenty-five-yes-button`}
             >
               Yes
