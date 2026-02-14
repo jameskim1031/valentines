@@ -4,6 +4,7 @@ import TwentyFour from "./Components/TwentyFour.js"; // Adjust the import path a
 import "./App.css";
 import TwentyFive from "./Components/TwentyFive.js";
 import Main from "./Components/Main.js";
+import TwentySix from "./Components/TwentySix.js";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/2025" element={<TwentyFive />} />
         <Route path="/2024" element={<TwentyFour />} />
+        <Route path="/2026" element={<TwentySix />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,0 +1,175 @@
+.twenty-six {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Stickers */
+.twenty-six-sticker,
+.twenty-six-yesSticker {
+  margin: 20px auto;
+  width: 300px;
+}
+
+.twenty-six-yesSticker {
+  margin-top: 150px;
+}
+
+.twenty-six-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap between buttons */
+}
+
+.twenty-six-no-button {
+  height: 30px;
+  width: 50px;
+  background-color: rgb(222, 158, 158);
+}
+
+.twenty-six-yes-button {
+  background-color: rgb(158, 222, 158);
+}
+
+/* Make the "empty" button just a spacer, not a real button */
+.twenty-six-empty-button {
+  width: 24px;
+  height: 1px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  pointer-events: none;
+}
+
+/* Hover + active */
+.twenty-six-yes-button:hover,
+.twenty-six-no-button:hover {
+  transform: scale(1.06);
+  filter: brightness(0.98);
+}
+
+.twenty-six-yes-button:active,
+.twenty-six-no-button:active {
+  transform: scale(0.98);
+}
+
+/* Colors */
+.twenty-six-yes-button {
+  background-color: rgb(158, 222, 158);
+}
+
+.twenty-six-no-button {
+  background-color: rgb(222, 158, 158);
+}
+
+/* Yes message spacing */
+.twenty-six-yes-message > * {
+  margin: 5px;
+}
+
+/* Modal overlay */
+.jj-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* The dialog box */
+.jj-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: min(420px, 90vw);
+  background: white;
+  border-radius: 18px;
+  padding: 22px 18px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  position: absolute; /* so offsets stack nicely */
+}
+
+.jj-modal-title {
+  margin: 0 0 6px 0;
+  font-size: 24px;
+}
+
+.jj-modal-subtitle {
+  margin: 0 0 16px 0;
+  opacity: 0.8;
+}
+
+.jj-modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.jj-modal-yes,
+.jj-modal-no {
+  border: none;
+  border-radius: 12px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.jj-modal-yes {
+  background: #111;
+  color: #fff;
+}
+
+.jj-modal-no {
+  background: #eee;
+  color: #111;
+}
+
+.jj-modal-depth {
+  margin-top: 12px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.warning-modal {
+  border: 3px solid #ff4d4d;
+  background: linear-gradient(145deg, #fff6f6, #ffeaea);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.35);
+  animation: warningPulse 1.5s ease-in-out infinite alternate;
+}
+
+.warning-bar {
+  background: #ff4d4d;
+  color: white;
+  font-weight: 700;
+  padding: 6px 0;
+  text-align: center;
+  border-radius: 12px 12px 0 0;
+  margin: -22px -18px 16px -18px;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+/* Slight pulse effect */
+@keyframes warningPulse {
+  from {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+  }
+  to {
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+  }
+}
+
+/* Buttons inside warning */
+.jj-modal-yes {
+  background: #ff4d4d;
+  color: white;
+}
+
+.jj-modal-no {
+  background: #444;
+  color: white;
+}

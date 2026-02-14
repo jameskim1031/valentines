@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import twentyFourImg from "../Images/2024.jpg";
 import twentyFiveImg from "../Images/2025.jpg";
+import twentySixImg from "../Images/2026.jpg";
 import "./Main.css";
 
 export default function Main() {
@@ -21,6 +22,12 @@ export default function Main() {
           <h2 className="year-label">2025</h2>
           <div className="image-container">
             <img src={twentyFiveImg} alt="2025" />
+          </div>
+        </div>
+        <div className="main-gallery-item" onClick={() => navigate("/2026")}>
+          <h2 className="year-label">2026</h2>
+          <div className="image-container">
+            <img src={twentySixImg} alt="2026" />
           </div>
         </div>
       </div>
