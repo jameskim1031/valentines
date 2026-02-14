@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import "./TwentyFour.css";
 import dudu from "../Images/dudu.jpeg";
-import { useNavigate } from "react-router-dom";
 import bubududu from "../Images/bubududu.jpeg";
 
 function TwentyFour() {
-  let navigate = useNavigate();
   const [buttonSize, setButtonSize] = useState(30);
   const [saidYes, setSaidYes] = useState(false);
 
